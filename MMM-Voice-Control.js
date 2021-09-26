@@ -6,7 +6,8 @@ Module.register("MMM-Voice-Control", {
 	defaults: {
 		language: "en",
 		voiceTextRestTimeout: 3000, // 3 seconds
-		listOfCommandsNotificationTime: 10000 // 10 seconds
+		listOfCommandsNotificationTime: 10000, // 10 seconds,
+		lightsOutNotificationTime: 30000 // 30 seconds
 	},
 
 	getScripts: function() {
@@ -98,7 +99,7 @@ Module.register("MMM-Voice-Control", {
 			},
 			function(error) {
 				console.log(error);
-				if (error.error == "network") {
+				if (error.error === "network") {
 					self.speechError = "Google Speech Recognizer is down :(";
 					self.annyangService.abort();
 					self.isListening = false;

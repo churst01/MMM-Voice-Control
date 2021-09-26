@@ -21,6 +21,14 @@ function CommandManager(scope) {
 		});
 	});
 
+	scope.registerCommand('lights_out', function (){
+		scope.sendNotification("LIGHTS_OUT",{
+			title: "Lights out and here we go",
+			message: "TEST",
+			timer: scope.config.lightsOutNotificationTime
+		})
+	})
+
 	scope.registerCommand('dublinbus_start', function() {
 		scope.sendNotification("DUBLINBUS_START");
 	});

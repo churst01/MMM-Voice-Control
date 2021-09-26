@@ -19,15 +19,10 @@
             "voice": "Wake up",
             "description": "Wakes up all the running modules"
         },
-        "dublinbus_start": {
-            "text": "Show bus times",
-            "voice": "Show bus times",
-            "description": "Shows dublin bus times for buses heading into town"
-        },
-        "dublinbus_stop": {
-            "text": "Close bus times",
-            "voice": "Close bus times",
-            "description": "Closes displaying bus times notification"
+        "lights_out": {
+            "text": "Lights out away we go",
+            "voice": "Lights out and away we go",
+            "description": "Informs the next date and time of an F1 race"
         }
     }
 }
